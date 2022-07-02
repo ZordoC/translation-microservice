@@ -1,0 +1,15 @@
+# set base image (host OS)
+FROM  python:3.8.13-slim
+
+# set the working directory in the container
+WORKDIR /app
+
+# copy the dependencies file to the working directory
+COPY ./requirements_dev.txt .
+
+# install dependencies
+RUN pip install -r requirements_dev.txt
+
+# copy the content of the local directory to the working directory
+COPY . /app
+
