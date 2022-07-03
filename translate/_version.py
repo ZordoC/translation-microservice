@@ -43,8 +43,8 @@ def get_config():
     cfg = VersioneerConfig()
     cfg.VCS = "git"
     cfg.style = "pep440"
-    cfg.tag_prefix = "translate"
-    cfg.parentdir_prefix = "myproject-"
+    cfg.tag_prefix = "None"
+    cfg.parentdir_prefix = "None"
     cfg.versionfile_source = "translate/_version.py"
     cfg.verbose = False
     return cfg
